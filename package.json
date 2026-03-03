@@ -4,15 +4,14 @@
   "description": "Stream real-time logs from your Render.com services with AI-powered error analysis",
   "version": "1.0.0",
   "publisher": "YadneshBamne",
-  "icon": "icon.png",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/rerender"
+    "url": "https://github.com/YadneshBamne/ReRender"
   },
-  "homepage": "https://github.com/yourusername/rerender#readme",
+  "homepage": "https://github.com/YadneshBamne/ReRender#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/rerender/issues"
+    "url": "https://github.com/YadneshBamne/ReRender/issues"
   },
   "engines": {
     "vscode": "^1.75.0"

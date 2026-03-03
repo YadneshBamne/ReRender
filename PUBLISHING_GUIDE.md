@@ -33,9 +33,9 @@ This guide shows you how to publish your ReRender extension to the VS Code Marke
 {
   "publisher": "your-publisher-id",  // ← Change this (Step 2 below)
   "repository": {
-    "url": "https://github.com/YOUR-USERNAME/rerender"  // ← Your GitHub username
+    "url": "https://github.com/YadneshBamne/ReRender"  // ← Your GitHub username
   },
-  "homepage": "https://github.com/YOUR-USERNAME/rerender#readme"  // ← Your GitHub username
+  "homepage": "https://github.com/YadneshBamne/ReRender#readme"  // ← Your GitHub username
 }
 ```
 
