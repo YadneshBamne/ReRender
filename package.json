@@ -66,7 +66,13 @@
           "icon": "$(server)"
         }
       ]
-    }
+    },
+    "viewsWelcome": [
+      {
+        "view": "renderServices",
+        "contents": "No Render API key configured.\n[Set API Key](command:rerender.setApiKey)\nAfter setting your API key, your services will appear here.\n\n[How to get API key?](https://render.com/docs/api#getting-started)"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
