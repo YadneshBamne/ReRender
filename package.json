@@ -1,0 +1,92 @@
+{
+  "name": "rerender",
+  "displayName": "ReRender",
+  "description": "Stream real-time logs from your Render.com services with AI-powered error analysis",
+  "version": "1.0.0",
+  "publisher": "YadneshBamne",
+  "icon": "icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/rerender"
+  },
+  "homepage": "https://github.com/yourusername/rerender#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/rerender/issues"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization",
+    "Debuggers"
+  ],
+  "keywords": [
+    "render",
+    "render.com",
+    "logs",
+    "real-time",
+    "streaming",
+    "monitoring",
+    "devops",
+    "deployment",
+    "ai",
+    "error-analysis",
+    "groq"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rerender.setApiKey",
+        "title": "ReRender: Set API Key"
+      },
+      {
+        "command": "rerender.refreshServices",
+        "title": "ReRender: Refresh Services"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "rerender",
+          "title": "ReRender",
+          "icon": "$(pulse)"
+        }
+      ]
+    },
+    "views": {
+      "rerender": [
+        {
+          "id": "renderServices",
+          "name": "Render Services",
+          "icon": "$(server)"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.x",
+    "@types/vscode": "^1.75.0",
+    "@types/ws": "^8.5.10",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.40.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ws": "^8.16.0"
+  }
+}

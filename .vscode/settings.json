@@ -1,0 +1,8 @@
+{
+  "renderGuardian.pollIntervalSeconds": 180,
+  "renderGuardian.useAI": false,
+  "renderGuardian.aiProvider": "groq",
+  "renderGuardian.groqApiKey": "",
+  "renderGuardian.openaiApiKey": "",
+  "renderGuardian.enableNotifications": true
+}
